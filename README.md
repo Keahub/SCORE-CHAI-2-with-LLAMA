@@ -1,4 +1,4 @@
-# Zeru Finance – Wallet Risk Scoring (Assignment 2)
+# SCORECHAIN – Wallet Risk Scoring (Assignment 2)
 
 This project calculates a **risk score (0–1000)** for Ethereum wallets using their on-chain transaction history.
 
@@ -103,6 +103,4 @@ Rule-based scoring relies on fixed thresholds and does **not** require scaling.
 
 ---
 
-## 👨‍💻 Author
 
-Assignment submitted for Zeru Finance – Round 2
