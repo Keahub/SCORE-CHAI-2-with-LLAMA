@@ -102,5 +102,12 @@ Normalization was applied only for model-based scoring using MinMaxScaler.
 Rule-based scoring relies on fixed thresholds and does **not** require scaling.
 
 ---
+## Author
+
+**Vanga Jai Prakash**  
+Creator of **ScoreChain2** – Wallet Risk Scoring (+ LLM add-on)
+
+- Email: vangajaiprakash@gmail.com  
+- GitHub: [Vanga-Jai-Prakash](https://github.com/Vanga-Jai-Prakash)
 
 
