@@ -1,4 +1,4 @@
-# SCORECHAIN – Wallet Risk Scoring (Assignment 2)
+# SCORECHAIN – Wallet Risk Scoring
 
 This project calculates a **risk score (0–1000)** for Ethereum wallets using their on-chain transaction history.
 
