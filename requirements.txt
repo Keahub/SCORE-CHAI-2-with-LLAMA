@@ -1,0 +1,11 @@
+# base pipeline
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+requests
+openpyxl
+
+# include LLM add-on deps
+-r scorechainllama/requirements.txt
