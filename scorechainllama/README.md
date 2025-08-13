@@ -1,4 +1,4 @@
-# Assignment 2 – Llama 2 LLM Add‑On (Hugging Face Inference API)
+#  Llama 2 LLM Add‑On (Hugging Face Inference API)
 
 This add‑on plugs into your scorechain2 project to perform **project‑based updates** using **Llama 2** via the **Hugging Face Inference API**.
 It includes:
@@ -31,7 +31,7 @@ streamlit run streamlit_app_llama2.py
 
 4) **Use the CLI on your existing Assignment 2 project**
 ```bash
-python tools/llama2_update.py --path "../zeru finance assignment_2 project folder"   --outfile "../AI_UPDATE_NOTES_LLAMA2.md"
+python tools/llama2_update.py --path "../ScoreChain2"   --outfile "../AI_UPDATE_NOTES_LLAMA2.md"
 ```
 
 ## Configure
